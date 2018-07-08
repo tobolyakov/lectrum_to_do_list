@@ -156,9 +156,9 @@ export default class Task extends PureComponent {
                     <input type="text"
                            disabled
                            maxLength = { 50 }
-                           ref={ this.taskInput }
+                           ref = { this.taskInput }
                            onKeyDown = { this._updateTaskMessageOnKeyDown }
-                           onChange={ this._updateNewTaskMessage }
+                           onChange = { this._updateNewTaskMessage }
                            value = { newMessage }
                     />
                 </div>

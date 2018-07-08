@@ -27,12 +27,12 @@ export default class Scheduler extends Component {
 
     _updateTasksFilter = (event) => {
         const { value } = event.target;
-        this.setState(({ tasksFilter: value.toLocaleLowerCase() }));
+        this.setState({ tasksFilter: value.toLocaleLowerCase() });
     };
 
     _updateNewTaskMessage = (event) => {
         const { value: newTaskMessage } = event.target;
-        this.setState(({ newTaskMessage }));
+        this.setState({ newTaskMessage });
 
     };
 
@@ -46,7 +46,7 @@ export default class Scheduler extends Component {
         return tasks.some((task) => {
             return task.completed === true;
         });
-    };//
+    };
 
     _setTasksFetchingState = (bool) => {
         this.setState({ isTasksFetching: bool });
@@ -196,7 +196,7 @@ export default class Scheduler extends Component {
                                 type="text"
                                 maxLength = { 50 }
                                 onChange = { this._updateNewTaskMessage }
-                                placeholder="Описaние моей новой задачи"
+                                placeholder = "Описaние моей новой задачи"
                                 value = { newTaskMessage }  />
                             <button>
                                 Добавить задачу
