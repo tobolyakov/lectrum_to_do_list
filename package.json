@@ -24,7 +24,7 @@
     },
     "dependencies": {
         "classnames": "~2.2.6",
-        "moment": "~2.22.2",
+        "moment": "~2.29.4",
         "react": "~16.4.1",
         "react-dom": "~16.4.1",
         "react-flip-move": "~3.0.2",
